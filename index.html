@@ -1,0 +1,323 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Golden Pig Node!</title>
+		<style id="system" type="text/css">
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			p,
+			blockquote {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+				font-size: 13px;
+				line-height: 18px;
+				color: #737373;
+				margin: 10px 13px 10px 13px;
+			}
+
+			a {
+				color: #0069d6;
+			}
+
+			a:hover {
+				color: #0050a3;
+				text-decoration: none;
+			}
+
+			a img {
+				border: none;
+			}
+
+			p {
+				margin-bottom: 9px;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				color: #404040;
+				line-height: 36px;
+			}
+
+			h1 {
+				margin-bottom: 18px;
+				font-size: 30px;
+			}
+
+			h2 {
+				font-size: 24px;
+			}
+
+			h3 {
+				font-size: 18px;
+			}
+
+			h4 {
+				font-size: 16px;
+			}
+
+			h5 {
+				font-size: 14px;
+			}
+
+			h6 {
+				font-size: 13px;
+			}
+
+			hr {
+				margin: 0 0 19px;
+				border: 0;
+				border-bottom: 1px solid #ccc;
+			}
+
+			blockquote {
+				padding: 13px 13px 21px 15px;
+				margin-bottom: 18px;
+				font-family: georgia, serif;
+				font-style: italic;
+			}
+
+			blockquote:before {
+				content: "C";
+				font-size: 40px;
+				margin-left: -10px;
+				font-family: georgia, serif;
+				color: #eee;
+			}
+
+			blockquote p {
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 18px;
+				margin-bottom: 0;
+				font-style: italic;
+			}
+
+			code,
+			pre {
+				font-family: Monaco, Andale Mono, Courier New, monospace;
+			}
+
+			code {
+				background-color: #fee9cc;
+				color: rgba(0, 0, 0, 0.75);
+				padding: 1px 3px;
+				font-size: 12px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+
+			pre {
+				display: block;
+				padding: 14px;
+				margin: 0 0 18px;
+				line-height: 16px;
+				font-size: 11px;
+				border: 1px solid #d9d9d9;
+				white-space: pre-wrap;
+				word-wrap: break-word;
+			}
+
+			pre code {
+				background-color: #fff;
+				color: #737373;
+				font-size: 11px;
+				padding: 0;
+			}
+
+			@media screen and (min-width: 768px) {
+				body {
+					width: 748px;
+					margin: 10px auto;
+				}
+			}
+
+			.center-text {
+				text-align: center;
+				font-family: Tahoma, Verdana, Arial, sans-serif;
+			}
+		</style>
+		<style id="custom" type="text/css"></style>
+	</head>
+	<body marginheight="0">
+
+
+		<div class="center-text">
+			<h1 style="color: midnightblue;">Welcome to Golden Pig Node!</h1>
+		</div>
+
+		<h1 style="color: midnightblue;">Golden Pig Oath:</h1>
+		<pre><code>                    Not throwing coins, Not cashing out, Not short selling
+
+                    All node profits enter market making
+
+                    Harvest never dies, Golden Pig never dies
+
+          Thank you for voting on the Golden Pig node.
+
+          Golden Pig Invitation code: 10020*</code></pre>
+		<h1>Run DFS Node, Secure the Network, Earn DFS.</h1>
+		<p>Help Decentralize the network by runing a DFS node.
+
+		</p>
+		<p>By processing transactions and participating in consensus, each validator helps make DFS Network the most
+			censorship resistant and highest-performance blockchain network in the world.
+
+		</p>
+		<h1 class="center-text" style="color: midnightblue;">How to Quickly Run a DFS node</h1>
+		<h2>Step 0: register as a block producer</h2>
+		<p>You can register more easily through the ui: <a
+				href="https://dfs.land/nodeVote/register">https://dfs.land/nodeVote/register</a>
+
+		</p>
+		<ul>
+			<li>Remember to save the producer key pair generated during registration * </li>
+		</ul>
+		<h2>Step 1: Clone this repository</h2>
+		<pre><code>sudo su
+
+git clone https://github.com/DFSNetwork/dfs-node-quick-start.git
+
+cd dfs-node-quick-start</code></pre>
+		<h2>Step 2: Download and Install</h2>
+		<p>system requirement: ubuntu18.04 or ubuntu22.04
+
+
+		</p>
+		<p>if you are using ubuntu18.04:
+
+		</p>
+		<pre><code>wget https://github.com/DFSNetwork/dfs-core/releases/download/v10.0.0/dfs_10.0.0-ubuntu18.04_amd64.deb
+
+apt update
+
+dpkg -i dfs_10.0.0-ubuntu18.04_amd64.deb</code></pre>
+		<p>if you are using ubuntu22.04:
+
+		</p>
+		<pre><code>wget https://github.com/DFSNetwork/dfs-core/releases/download/v10.0.0/dfs_10.0.0-ubuntu22.04_amd64.deb
+
+apt update
+
+dpkg -i dfs_10.0.0-ubuntu22.04_amd64.deb</code></pre>
+		<p>check whether the installation is successful
+		</p>
+		<pre><code>nodeos --version
+v10.0.0</code></pre>
+		<h2>Step 3: Edit your Producer Node</h2>
+		<p>Edit your Producer Node's config.ini
+
+		</p>
+		<p>Remember to replace your own bp name and key pair.
+
+		</p>
+		<pre><code>cd producer-node
+cd producer-node
+vim config.ini</code></pre>
+		<p> producer-name: Replace it with yours
+		</p>
+		<pre><code>producer-name = produceraaaa //Edit yourname</code></pre>
+		<p> key-pair: Replace it with yours
+		</p>
+		<pre><code>signature-provider = PUB_K1_5KReCfGBEgmMsEjGZmfQRzKCHntrU4kuq7LF8ywr6YK7ZHm121=KEY:PVT_K1_2H5vUyCpGWE3DXyY87ZzeneniQqHtmjSg8YbcU8788QjzccHs2 //Edit yourPUBandKEY</code></pre>
+		<h4>Press "Esc" and enter ":wq"</h4>
+		<h2>Step 4:Download the "start_snapshot script"</h2>
+		<p>Download the "start_snapshot script" to the producer-node
+		</p>
+		<pre><code>curl -O https://api.dfstiger.xyz/start-snapshot
+chmod +x start-snapshot</code></pre>
+		<h2>Step 5:Run Producer Node</h2>
+		<pre><code>./start-snapshot</code></pre>
+		<h1>Tools</h1>
+		<p>view run logs and synchronization progress
+		</p>
+		<pre><code>./showlog</code></pre>
+		<p>and stop cmd
+		</p>
+		<pre><code>./stop</code></pre>
+		<h2>producer: See which node is producing</h2>
+		<pre><code>./producer
+
+-------------------------------
+       Time        Producer
+-------------------------------
+ 1.  11:33:05    2vy14dqixpvi
+ 2.  11:33:11    bitcoinzhang
+ 3.  11:33:17    bpdfsnetwork
+ 4.  11:33:23    californiabp
+ 5.  11:33:29    dfgdeveloper
+ 6.  11:33:35    dfs111223344
+ 7.  11:33:41    dfsbpdfsbp11
+ 8.  11:33:47    dfsbtcl2no1x
+ 9.  11:33:53    dfslover1111
+ 10. 11:33:59    dfsnetworkbp *
+ 11. 11:34:05    dfsneverfail
+ 12. 11:34:11    dfssingapore
+ 13. 11:34:17    ethereumbest
+ 14. 11:34:23    greatdfsfarm
+ 15. 11:34:29    hpe4jyjgyjd4
+ 16. 11:34:35    hungarytiger
+ 17. 11:34:41    iamaproducer
+ 18. 11:34:47    imaxiusfirst
+ 19. 11:34:53    poweredbydfs
+ 20. 11:32:41    thlknlna32fu
+ 21. 11:32:53    xiaoming5555
+ 22. 11:32:59    zydntcgyiozo
+-------------------------------</code></pre>
+		<h2>lsnode: List all nodes status</h2>
+		<pre><code>./lsnode
+
+ nodes=73
+ producers=22
+
+-------------------------------------------------------
+ No     Node            RPC     P2P     Reward  Votes
+-------------------------------------------------------
+ 1      dfsbpdfsbp11    1       1       1       446307
+ 2      californiabp    1       1       1       199924
+ 3      dfsbtcl2no1x    1       1       1       94260
+ 4      iamaproducer    1       1       1       74039
+ 5      imaxiusfirst    1       1       1       73452
+ 6      dfsnetworkbp    1       1       1       57672
+ 7      thlknlna32fu    1       1       1       57613
+ 8      dfssingapore    1       1       1       45847
+ 9      dfsneverfail    1       1       1       43960
+ 10     dfgdeveloper    1       1       1       31668
+ 11     greatdfsfarm    1       1       1       29437
+ 12     bpdfsnetwork    1       1       1       25724
+ 13     poweredbydfs    1       1       1       24723
+ 14     hpe4jyjgyjd4    1       1       1       24082
+ 15     2vy14dqixpvi    1       1       1       22458
+ 16     dfs111223344    1       1       1       17941
+ 17     woyaofeidegg    0       0       0       17694
+ 18     bitcoinzhang    1       1       1       12315
+ 19     ethereumbest    1       1       1       10432
+ 20     zydntcgyiozo    0       0       0       8646
+ 21     dfslover1111    1       1       1       8081
+ 22     hungarytiger    1       1       1       7074
+ 23     xiaoming5555    1       1       1       5379
+ 24     pumpmydfs55k    1       1       1       4235
+ 25     4kfkhcqgsqwd    0       0       0       1849
+ 26     sunrisedfs11    1       1       1       1753
+ 27     physicslover    1       1       1       1323
+ 28     pinkdfsbp111    1       1       1       1090
+ 29     ptfgxmg12345    1       1       1       1030
+ 30     testusera114    0       0       0       966
+-------------------------------------------------------</code></pre>
+		<h2>Join discord and get support</h2>
+		<p><a href="https://discord.com/invite/JydrcH5u9V">https://discord.com/invite/JydrcH5u9V</a>
+		</p>
+	</body>
+</html>
